@@ -21,11 +21,11 @@ export class ShoppingEditComponent implements OnInit {
 
   onShoppingItemAdd() {
     console.log("onShoppingItemAdd method has been called");
-    this.shoppingService.addIngredient(
-      new Ingredient(
+    this.shoppingService.addIngredients(
+      [new Ingredient(
         this.nameInput.nativeElement.value,
         this.amountInput.nativeElement.value
-      )
+      )]
     );
   }
 
